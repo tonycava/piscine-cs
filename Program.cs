@@ -7,7 +7,9 @@ namespace TestCSharp
   {
     static void Main(string[] args)
     {
-      Console.WriteLine(HelloWorld_Exercice.HelloWorld());
+      Console.WriteLine(IsOdd_Exercice.IsOdd(2));
+      Console.WriteLine(IsOdd_Exercice.IsOdd(11));
+      Console.WriteLine(IsOdd_Exercice.IsOdd(30));
     }
   }
 }
