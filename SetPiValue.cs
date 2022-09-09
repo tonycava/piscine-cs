@@ -4,7 +4,7 @@
   {
     public static float SetPiValue(float pi)
     {
-      return 3.14159;
+      return 3.14159F;
     }
   }
 }
