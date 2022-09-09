@@ -6,7 +6,7 @@ namespace CSharpDiscovery.Quest01
   {
     public static bool BeginsWithSpecificCharacter(string str, char begin)
     {
-      return str.StartWith(begin);
+      return str.StartsWith(begin);
     }
   }
 }
