@@ -1,14 +1,16 @@
 ﻿using System;
 using CSharpDiscovery.Quest01;
+using CSharpDiscovery.Models;
 
 namespace TestCSharp
 {
   class Program
   {
-    static void Main(string[] str)
+    static void Main(string[] args)
     {
-      Console.WriteLine(ContainsSpecificSubstring_Exercice.ContainsSpecificSubstring("helloworld", "hello"));
-      Console.WriteLine(ContainsSpecificSubstring_Exercice.ContainsSpecificSubstring("helloworld", "monde"));
+      Console.WriteLine(NextTrafficLightColor_Exercice.GetNextTrafficLightColor(TrafficLightColor.Red));
+      Console.WriteLine(NextTrafficLightColor_Exercice.GetNextTrafficLightColor(TrafficLightColor.Orange));
+      Console.WriteLine(NextTrafficLightColor_Exercice.GetNextTrafficLightColor(TrafficLightColor.None));
     }
   }
 }
