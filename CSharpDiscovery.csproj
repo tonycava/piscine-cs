@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>challenge_cs</RootNamespace>
+    <RootNamespace>CSharpDiscovery</RootNamespace>
   </PropertyGroup>
 
 </Project>
