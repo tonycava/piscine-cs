@@ -7,7 +7,8 @@ namespace TestCSharp
   {
     static void Main(string[] str)
     {
-      Console.WriteLine(GetStringSize_Exercice.GetStringSize("helloworld"));
+      string[] table = { "hello", "world" };
+      Console.WriteLine(ConcatEverything_Exercice.ConcatEverything(table));
     }
   }
 }

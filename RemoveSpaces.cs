@@ -1,4 +1,6 @@
-﻿namespace CSharpDiscovery.Quest01
+﻿using System;
+
+namespace CSharpDiscovery.Quest01
 {
   public class RemoveSpaces_Exercice
   {
