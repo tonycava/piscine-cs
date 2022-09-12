@@ -9,9 +9,19 @@ namespace TestCSharp
     static void Main(string[] args)
     {
       var people = new HashSet<string> { "Arnaud", "Marie", "Alexandre", "Audrey", "Adrien", "Mathilde", "Théophile", "Hanako" };
+      var people2 = new HashSet<string> { "Arnaud", "Marie" };
+      
       var draw = SecretSanta_Exercice.SecretSantaDraw(people);
+      var draw2 = SecretSanta_Exercice.SecretSantaDraw(people);
 
       foreach (KeyValuePair<string, string> pair in draw) {
+        Console.WriteLine("{0} is offering to {1}", pair.Key, pair.Value);
+      }
+
+      Console.WriteLine("=====================");
+
+      
+      foreach (KeyValuePair<string, string> pair in draw2) {
         Console.WriteLine("{0} is offering to {1}", pair.Key, pair.Value);
       }
     }

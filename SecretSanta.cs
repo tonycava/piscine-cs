@@ -8,6 +8,8 @@ namespace CSharpDiscovery.Quest02
   {
     public static Dictionary<string,string> SecretSantaDraw(HashSet<string> people)
     {
+      Console.WriteLine(string.Join("==>", people));
+      
       Dictionary<string, string> dic = new Dictionary<String, String>();
       
       
