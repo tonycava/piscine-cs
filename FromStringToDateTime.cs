@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace CSharpDiscovery.Quest02
 {
@@ -6,7 +7,8 @@ namespace CSharpDiscovery.Quest02
   {
     public static DateTime FromStringToDateTime(string dateStr)
     {
-      return DateTime.Parse(dateStr);
+      var cultureInfo = new CultureInfo("de-DE");
+      return DateTime.Parse(dateStr, cultureInfo);
     }
   }
 }
