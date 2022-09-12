@@ -21,16 +21,13 @@ namespace CSharpDiscovery.Quest02
       
       Random rnd = new Random();
       
-      for (int i = 0; i < people.Count; i++)
+      for (int i = 0; i < (people.Count - 1) / 2; i+=2)
       {
         int indexOfPerson1 = rnd.Next(0, people.Count);
         int indexOfPerson2 = rnd.Next(0, people.Count);
         
         while (indexOfPerson1 == indexOfPerson2) indexOfPerson2 = rnd.Next(0, people.Count);
-        
-        if (indexOfPerson1 > people.Count || indexOfPerson2 > people.Count) continue;
-        
-        
+
         if (dic.ContainsKey(people.ElementAt(indexOfPerson1)) == false)
         {
           
