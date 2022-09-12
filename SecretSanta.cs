@@ -10,6 +10,13 @@ namespace CSharpDiscovery.Quest02
     {
       Dictionary<string, string> dic = new Dictionary<String, String>();
       
+      
+      if (people.Count == 2)
+      {
+        dic.Add(people.ElementAt(0), people.ElementAt(1));
+        return dic;
+      }
+      
       Random rnd = new Random();
       
       for (int i = 0; i < people.Count; i++)
