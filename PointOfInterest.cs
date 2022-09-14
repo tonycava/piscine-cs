@@ -7,7 +7,6 @@ namespace CSharpDiscovery.Quest03
         public double Latitude { get; set; } = 0;
         public double Longitude { get; set; } = 0;
         public string Name { get; set; } = "";
-
         public static string GoogleMapsUrlTemplate = "https://www.google.com/maps/place/{0}/@{1},{2},15z/";
 
         public PointOfInterest()
@@ -29,7 +28,7 @@ namespace CSharpDiscovery.Quest03
             return ($"https://www.google.com/maps/place/{Name.Replace(" ","+")}/@{Latitude},{Longitude},15z/");
         }
 
-        public string ToString()
+        public override string ToString()
         {
             return ($"{Name} (Lat={Latitude}, Long={Longitude})");
         }
@@ -71,9 +70,8 @@ namespace CSharpDiscovery.Quest03
         
         static void Main(string[] str)
         {
-            var BordeauxCampus = new Campus();
-            BordeauxCampus.Capacity = 3000;
-            Console.WriteLine(BordeauxCampus.ToString());
+            PointOfInterest PorteCailhau = new HistoricalMonument("Porte Cailhau", 44.838336, -0.569446, 1493);
+            Console.WriteLine(PorteCailhau.ToString());
         }
     }
 }
