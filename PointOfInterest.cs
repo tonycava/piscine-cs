@@ -25,6 +25,12 @@ namespace CSharpDiscovery.Quest03
 
     // https://www.google.com/maps/place/Bordeaux+Ynov+Campus/@44.854186,-0.5663056,15z/
     // https://www.google.com/maps/place/Bordeaux+Ynov+Campus@44.854186/@-0.5663056,15z/
+
+
+    public string ToString()
+    {
+      return $"{Name} (Lat={Latitude}, Long={Longitude})";
+    }
     
     public string GetGoogleMapsUrl()
     {
@@ -39,10 +45,10 @@ namespace CSharpDiscovery.Quest03
     static void Main(string[] str)
     {
       var DefaultPoint = new PointOfInterest();
-      Console.WriteLine(DefaultPoint.GetGoogleMapsUrl());
+      Console.WriteLine(DefaultPoint.ToString());
 
       var ParisCampus = new PointOfInterest("Paris Ynov Campus", 48.9016552, 2.2079985);
-      Console.WriteLine(ParisCampus.GetGoogleMapsUrl());
+      Console.WriteLine(ParisCampus.ToString());
     }
   }
 }
