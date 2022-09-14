@@ -2,7 +2,7 @@
 {
   public class Campus : PointOfInterest
   {
-    public int Capacity;
+    public int Capacity { get; set; } = 0;
     
     public string ToString()
     {
