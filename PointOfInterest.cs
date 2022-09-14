@@ -1,6 +1,7 @@
 ﻿using System;
+using CSharpDiscovery.Quest03;
 
-namespace CSharpDiscovery.Quest03
+namespace TestCSharp
 {
   class Program
   {
