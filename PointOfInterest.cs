@@ -23,9 +23,12 @@ namespace CSharpDiscovery.Quest03
       Longitude = longitude;
     }
 
+    // https://www.google.com/maps/place/Bordeaux+Ynov+Campus/@44.854186,-0.5663056,15z/
+    // https://www.google.com/maps/place/Bordeaux+Ynov+Campus@44.854186/@-0.5663056,15z/
+    
     public string GetGoogleMapsUrl()
     {
-      return $"https://www.google.com/maps/place/{Name.Replace(' ', '+')}@{Latitude}/@{Longitude},15z/";
+      return $"https://www.google.com/maps/place/{Name.Replace(' ', '+')}/@{Latitude},{Longitude},15z/";
     }
     
     
