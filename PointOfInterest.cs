@@ -22,6 +22,13 @@ namespace CSharpDiscovery.Quest03
       Latitude = latitude;
       Longitude = longitude;
     }
+
+    public string GetGoogleMapsUrl()
+    {
+      return $"https://www.google.com/maps/place/{Name.Replace(' ', '+')}@{Latitude}/@{Longitude},15z/";
+    }
+    
+    
   }
   
   class Program
@@ -29,14 +36,10 @@ namespace CSharpDiscovery.Quest03
     static void Main(string[] str)
     {
       var DefaultPoint = new PointOfInterest();
-      Console.WriteLine(DefaultPoint.Name);
-      Console.WriteLine(DefaultPoint.Latitude);
-      Console.WriteLine(DefaultPoint.Longitude);
+      Console.WriteLine(DefaultPoint.GetGoogleMapsUrl());
 
       var ParisCampus = new PointOfInterest("Paris Ynov Campus", 48.9016552, 2.2079985);
-      Console.WriteLine(ParisCampus.Name);
-      Console.WriteLine(ParisCampus.Latitude);
-      Console.WriteLine(ParisCampus.Longitude);
+      Console.WriteLine(ParisCampus.GetGoogleMapsUrl());
     }
   }
 }
