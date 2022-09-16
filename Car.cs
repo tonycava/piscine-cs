@@ -7,7 +7,7 @@ namespace CSharpDiscovery.Quest04
     public string Model { get; set; } = "";
     public string Brand { get; set; } = "";
     public string Color { get; set; } = "";
-    public int Speed { get; set; } = 0;
+    public int CurrentSpeed { get; set; } = 0;
 
     public Car()
     {
@@ -16,12 +16,12 @@ namespace CSharpDiscovery.Quest04
       Color = "Unknown";
     }    
     
-    public Car(string model, string brand, string color, int speed)
+    public Car(string model, string brand, string color, int speed = 0)
     {
       Model = model;
       Brand = brand;
       Color = color;
-      Speed = speed;
+      base.CurrentSpeed  = speed;
     }
     
     public override string ToString()
