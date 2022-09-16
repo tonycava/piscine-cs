@@ -30,7 +30,7 @@ namespace CSharpDiscovery.Quest04
     
     public override void Accelerate(int newSpeed)
     {
-      if (CurrentSpeed + newSpeed > 100) CurrentSpeed = 180;
+      if (CurrentSpeed + newSpeed > 100) CurrentSpeed = 100;
       else CurrentSpeed += newSpeed;
     }    
     
