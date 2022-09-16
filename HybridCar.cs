@@ -3,14 +3,13 @@ using System;
 
 namespace TestCSharp
 {
-  class HybridCar : Car, IThermalCar
+  public class HybridCar : Car, IThermalCar, IElectricCar
   {
     public HybridCar() {}
 
     public HybridCar(string model, string brand, string color, int currentSpeed = 0) : base(model, brand, color,
       currentSpeed) {}
-
-
+    
     private int _FuelLevel = 100;
     private int _BatteryLevel = 100;
     
