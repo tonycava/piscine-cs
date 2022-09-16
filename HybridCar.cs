@@ -1,7 +1,7 @@
 ﻿using CSharpDiscovery.Quest04;
 using System;
 
-namespace TestCSharp
+namespace CSharpDiscovery.Quest04
 {
   public class HybridCar : Car, IThermalCar, IElectricCar
   {
