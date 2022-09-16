@@ -67,11 +67,5 @@ namespace CSharpDiscovery.Quest03
             return (int)d + 1;
         }
         
-        
-        static void Main(string[] str)
-        {
-            PointOfInterest PorteCailhau = new HistoricalMonument("Porte Cailhau", 44.838336, -0.569446, 1493);
-            Console.WriteLine(PorteCailhau.ToString());
-        }
     }
 }
