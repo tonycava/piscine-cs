@@ -4,7 +4,7 @@ namespace CSharpDiscovery.Quest04
 {
   public interface IThermalCar
   {
-    public int FuelLevel;
+    public int FuelLevel = 0;
 
     public void FillUp();
     public int GetFuelLevel();
@@ -12,7 +12,7 @@ namespace CSharpDiscovery.Quest04
   }
   public interface IElectricCar
   {
-    public int BatteryLevel;
+    public int BatteryLevel = 0;
     public void Recharge();
     public int GetBatteryLevel();
     
