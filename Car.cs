@@ -25,13 +25,40 @@ namespace CSharpDiscovery.Quest04
     {
       return $"{Color} {Brand} {Model}";
     }
+
+
+    public override void Accelerate(int newSpeed)
+    {
+      if (CurrentSpeed + newSpeed > 180) CurrentSpeed = 180;
+      else CurrentSpeed += newSpeed;
+    }    
+    
+    public override void Brake(int newSpeed)
+    {
+      if (CurrentSpeed - newSpeed < 0) CurrentSpeed = 0;
+      else CurrentSpeed -= newSpeed;
+    }
     
     
     static void Main(string[] str)
     {
-      var RandomCar = new Car();
-      var Megane = new Car("Mégane", "Renault", "Yellow", 50);
-      Vehicule.WhoIsHere();
+      var Megane = new Car("Mégane", "Renault", "Yellow", 100);
+
+      Megane.Accelerate(50);
+
+      Console.WriteLine(Megane.CurrentSpeed);
+
+      Megane.Accelerate(50);
+
+      Console.WriteLine(Megane.CurrentSpeed);
+
+      Megane.Brake(160);
+
+      Console.WriteLine(Megane.CurrentSpeed);
+
+      Megane.Brake(40);
+
+      Console.WriteLine(Megane.CurrentSpeed);
     }
   }
   
